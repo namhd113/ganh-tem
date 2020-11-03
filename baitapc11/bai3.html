@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    function Codegym(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] === "a" || str[i] === "o" || str[i] === "e" || str[i] === "u" || str[i] === "i") {
+                count++;
+            }
+        }
+        if (count == 0)
+            return false;
+        else {
+            return count;
+        }
+    }
+    let str = "codegymC11";
+    document.write(Codegym(str));
+</script>
+</body>
+</html>
